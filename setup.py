@@ -5,14 +5,14 @@ package_dir = \
 {'': 'src'}
 
 packages = \
-['template',
- 'template.content',
- 'template.functions',
- 'template.ux']
+['warehouse',
+ 'warehouse.content',
+ 'warehouse.functions',
+ 'warehouse.ux']
 
 package_data = \
 {'': ['*'],
- 'template': ['assets/mocking/keys/*',
+ 'warehouse': ['assets/mocking/keys/*',
                  'assets/mocking/testdata/*',
                  'assets/static/*',
                  'assets/templates/*']}
@@ -21,7 +21,7 @@ install_requires = \
 ['click>=8.1.3,<9.0.0', 'flask>=3.0.0,<4.0.0']
 
 entry_points = \
-{'console_scripts': ['template = template.ux.cli:cli']}
+{'console_scripts': ['warehouse = warehouse.ux.cli:cli']}
 
 setup_kwargs = {
     'name': 'template',

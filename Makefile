@@ -1,4 +1,4 @@
-APPNAME="template"
+APPNAME="warehouse"
 SUDOUSERNAME=$(SUDO_USER)
 CONFIGURATION="default"
 TYPE="python"
