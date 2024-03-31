@@ -24,7 +24,7 @@ def cli(ctx):
 @click.group(name="system")
 def system_group():
     pass
-    
+
 
 @system_group.command("stub")
 def system_stub_cmd():
