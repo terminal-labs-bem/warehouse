@@ -1,12 +1,15 @@
 renamedirs = [ "[repo]/src/warehouse",]
-editlines = [ 
-[ "[repo]/Makefile", "APPNAME=\"warehouse\"", "APPNAME=\"[newname]\"",],
-[ "[repo]/pyproject.toml", "name = \"warehouse\"", "name = \"[newname]\"",],
-[ "[repo]/pyproject.toml", "packages = [{include = \"warehouse\", from = \"src\"}]", "packages = [{include = \"[newname]\", from = \"src\"}]",],
-[ "[repo]/pyproject.toml", "warehouse = 'warehouse.ux.cli:cli'", "[newname] = '[newname].cli:cli'",],
-]
+editlines = []
 inherited = [
 "LICENSE",
 "MANIFEST.in",
 ".gitignore",
+"poetry.toml",
+]
+semiinherited = [
+"Makefile",
+"pyproject.toml",
+"setup.cfg",
+"setup.py",
+"Taskfile.yml",
 ]
