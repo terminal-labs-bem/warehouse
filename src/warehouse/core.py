@@ -20,23 +20,26 @@ import psutil
 
 from lowkit.initialization.workingset import setup_workingset
 
+
 def isWritable(path: str) -> bool:
     try:
-        filename  = os.path.join(path, 'write_test')
-        f = open(filename,"w")
+        filename = os.path.join(path, "write_test")
+        f = open(filename, "w")
         f.close()
         os.remove(filename)
         return True
     except:
         return False
 
+
 def in_venv():
     return sys.prefix != sys.base_prefix
+
 
 def get_fs_type(mypath):
     root_type = ""
     for part in psutil.disk_partitions():
-        if part.mountpoint == '/':
+        if part.mountpoint == "/":
             root_type = part.fstype
             continue
 
@@ -44,6 +47,7 @@ def get_fs_type(mypath):
             return part.fstype
 
     return root_type
+
 
 def initapp():
     setup_workingset()
