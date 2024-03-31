@@ -1,6 +1,11 @@
 renamedirs = [ "[repo]/src/warehouse",]
 editlines = []
 inherited = [
+".github/workflows/build.yml",
+"src/warehouse/settings.py",
+"src/warehouse/config.py",
+"src/warehouse/utils.py",
+"src/warehouse/core.py",
 "LICENSE",
 "MANIFEST.in",
 ".gitignore",

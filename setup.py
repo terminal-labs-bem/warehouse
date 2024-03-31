@@ -15,7 +15,7 @@ package_data = \
  'warehouse': ['assets/mocking/keys/*',
                  'assets/mocking/testdata/*',
                  'assets/static/*',
-                 'assets/templates/*']}
+                 'assets/warehouses/*']}
 
 install_requires = \
 ['click>=8.1.3,<9.0.0', 'flask>=3.0.0,<4.0.0']
@@ -24,7 +24,7 @@ entry_points = \
 {'console_scripts': ['warehouse = warehouse.ux.cli:cli']}
 
 setup_kwargs = {
-    'name': 'template',
+    'name': 'warehouse',
     'version': '0.0.1',
     'description': '',
     'long_description': '\n',
